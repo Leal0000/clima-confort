@@ -1,0 +1,24 @@
+--INSTALAR DJANGO--
+
+   apt install python3-django 
+
+   django --version
+--INSTALAR POSTGTRESQL--
+
+  sudo apt install postgresql postgresql-contrib
+
+--CONFIGURAR POSTGRESQL--
+
+  sudo su postgres
+
+  psql
+
+  create user admin10 with password 'admin1024';
+
+  alter user admin10 with superuser ;
+
+  grant all on database clima_confort to admin10;
+
+--INSTALAR PSYCOPG2--
+ 
+  apt-get install python3-psycopg2
