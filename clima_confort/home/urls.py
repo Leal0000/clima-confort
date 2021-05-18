@@ -6,7 +6,7 @@ from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
-    path('home/',views.pagina, name="Home"),
+    path('',views.pagina, name="Home"),
     path('principal', views.pagina, name="pagina"),
     path('accounts/', include('django.contrib.auth.urls')), 
     path('base/', views.base,  name="base"),
